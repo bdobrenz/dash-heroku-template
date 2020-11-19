@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -108,9 +107,8 @@ fixBox_6b.update_layout(font_family="Courier New",
 
 
 #create app
-app = Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-
 
 app.layout = html.Div(
     [
